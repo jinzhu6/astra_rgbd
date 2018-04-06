@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen" />
+  <node pkg="nodelet" type="nodelet" name="kinect_nodelet" 
+    args="load kinect_nodelet/PointCloudXyzrgbNodelet nodelet_manager"  output="screen">
+  </node>
+</launch>
